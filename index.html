@@ -1,70 +1,610 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-  <title>Cloud Hellboy | Portfólio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #080808;
-      color: white;
-      text-align: center;
-    }
+    <meta
+        name="description"
+        content="Site oficial de Cloud Hellboy — música, projetos, audiovisual e contato profissional."
+    >
 
-    main {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 30px;
-    }
+    <meta name="theme-color" content="#050505">
 
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
+    <title>Cloud Hellboy | Official</title>
 
-    p {
-      max-width: 650px;
-      color: #bbbbbb;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    a {
-      margin-top: 25px;
-      padding: 14px 24px;
-      border: 1px solid white;
-      border-radius: 8px;
-      color: white;
-      text-decoration: none;
-    }
-
-    a:hover {
-      background: white;
-      color: black;
-    }
-  </style>
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main>
-    <h1>Cloud Hellboy</h1>
 
-    <p>
-      Artista, criador e produtor. Este é meu portfólio oficial.
-      Em breve, músicas, projetos, vídeos, apresentações e informações
-      para contratação estarão disponíveis aqui.
-    </p>
+    <!-- =====================================================
+         NAVEGAÇÃO
+    ====================================================== -->
 
-    <a href="mailto:seuemail@email.com">
-      Contato profissional
-    </a>
-  </main>
+    <header class="header" id="header">
+
+        <a href="#home" class="logo">
+            CLOUD <span>HELLBOY</span>
+        </a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#music">Música</a>
+            <a href="#projects">Projetos</a>
+            <a href="#videos">Vídeos</a>
+            <a href="#press">Press Kit</a>
+            <a href="#contact">Contato</a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HERO / PRIMEIRA TELA
+        ====================================================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-background"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    ARTISTA • CRIADOR • PRODUTOR
+                </p>
+
+                <h1>
+                    CLOUD
+                    <span>HELLBOY</span>
+                </h1>
+
+                <p class="hero-description">
+                    Música, imagem e identidade transformadas
+                    em uma experiência.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#music" class="button button-primary">
+                        Explorar trabalho
+                    </a>
+
+                    <a href="#contact" class="button button-secondary">
+                        Contato profissional
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="scroll-line"></div>
+            </a>
+
+        </section>
+
+
+        <!-- =====================================================
+             SOBRE
+        ====================================================== -->
+
+        <section class="section about" id="about">
+
+            <div class="section-number">
+                01
+            </div>
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    SOBRE
+                </p>
+
+                <h2>
+                    Mais do que música.
+                    <span>Uma identidade.</span>
+                </h2>
+
+                <div class="about-grid">
+
+                    <div class="about-main">
+
+                        <p class="large-text">
+                            Cloud Hellboy é um projeto artístico independente
+                            que conecta música, estética, audiovisual e
+                            narrativa.
+                        </p>
+
+                    </div>
+
+                    <div class="about-secondary">
+
+                        <p>
+                            Este espaço reúne trabalhos, lançamentos,
+                            projetos e experiências que fazem parte
+                            desse universo.
+                        </p>
+
+                        <p>
+                            Novas informações sobre trajetória,
+                            influências e projetos serão adicionadas
+                            em breve.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             MÚSICA
+        ====================================================== -->
+
+        <section class="section music" id="music">
+
+            <div class="section-number">
+                02
+            </div>
+
+            <div class="section-content">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <p class="section-label">
+                            MÚSICA
+                        </p>
+
+                        <h2>
+                            Lançamentos
+                            <span>selecionados.</span>
+                        </h2>
+
+                    </div>
+
+                    <a href="#" class="text-link">
+                        Ver discografia →
+                    </a>
+
+                </div>
+
+
+                <div class="music-grid">
+
+                    <article class="music-card">
+
+                        <div class="music-cover">
+
+                            <div class="placeholder-art">
+                                01
+                            </div>
+
+                            <button class="play-button" aria-label="Reproduzir música">
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="music-info">
+
+                            <div>
+
+                                <h3>Próximo lançamento</h3>
+
+                                <p>Single • 2026</p>
+
+                            </div>
+
+                            <span>↗</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="music-card">
+
+                        <div class="music-cover">
+
+                            <div class="placeholder-art">
+                                02
+                            </div>
+
+                            <button class="play-button" aria-label="Reproduzir música">
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="music-info">
+
+                            <div>
+
+                                <h3>Projeto</h3>
+
+                                <p>Em breve</p>
+
+                            </div>
+
+                            <span>↗</span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="music-card">
+
+                        <div class="music-cover">
+
+                            <div class="placeholder-art">
+                                03
+                            </div>
+
+                            <button class="play-button" aria-label="Reproduzir música">
+                                ▶
+                            </button>
+
+                        </div>
+
+                        <div class="music-info">
+
+                            <div>
+
+                                <h3>Arquivo</h3>
+
+                                <p>Selected works</p>
+
+                            </div>
+
+                            <span>↗</span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PROJETOS
+        ====================================================== -->
+
+        <section class="section projects" id="projects">
+
+            <div class="section-number">
+                03
+            </div>
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    PROJETOS
+                </p>
+
+                <h2>
+                    Diferentes formatos.
+                    <span>Uma mesma visão.</span>
+                </h2>
+
+
+                <div class="project-list">
+
+                    <a href="#" class="project-item">
+
+                        <span class="project-index">
+                            01
+                        </span>
+
+                        <div class="project-name">
+
+                            <h3>Música</h3>
+
+                            <p>
+                                Singles • Projetos • Colaborações
+                            </p>
+
+                        </div>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="project-item">
+
+                        <span class="project-index">
+                            02
+                        </span>
+
+                        <div class="project-name">
+
+                            <h3>Audiovisual</h3>
+
+                            <p>
+                                Filmes • Visualizers • Conteúdo
+                            </p>
+
+                        </div>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                    <a href="#" class="project-item">
+
+                        <span class="project-index">
+                            03
+                        </span>
+
+                        <div class="project-name">
+
+                            <h3>Creative Projects</h3>
+
+                            <p>
+                                Arte • Narrativa • Experimentos
+                            </p>
+
+                        </div>
+
+                        <span class="project-arrow">
+                            ↗
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             VÍDEOS
+        ====================================================== -->
+
+        <section class="section videos" id="videos">
+
+            <div class="section-number">
+                04
+            </div>
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    VISUAL
+                </p>
+
+                <h2>
+                    Som também
+                    <span>é imagem.</span>
+                </h2>
+
+
+                <div class="featured-video">
+
+                    <div class="video-placeholder">
+
+                        <span>
+                            FEATURED VIDEO
+                        </span>
+
+                        <button class="video-play" aria-label="Reproduzir vídeo">
+                            ▶
+                        </button>
+
+                    </div>
+
+                    <div class="video-meta">
+
+                        <p>
+                            CLOUD HELLBOY
+                        </p>
+
+                        <p>
+                            VISUAL PROJECT / 2026
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PRESS KIT
+        ====================================================== -->
+
+        <section class="section press" id="press">
+
+            <div class="section-number">
+                05
+            </div>
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    PROFISSIONAL
+                </p>
+
+                <div class="press-grid">
+
+                    <div>
+
+                        <h2>
+                            Press
+                            <span>Kit.</span>
+                        </h2>
+
+                    </div>
+
+                    <div class="press-information">
+
+                        <p>
+                            Materiais oficiais para imprensa,
+                            produtores, contratantes, eventos,
+                            marcas e parceiros.
+                        </p>
+
+
+                        <div class="press-links">
+
+                            <a href="#">
+                                Release artístico
+                                <span>↗</span>
+                            </a>
+
+                            <a href="#">
+                                Fotos oficiais
+                                <span>↗</span>
+                            </a>
+
+                            <a href="#">
+                                Bio resumida
+                                <span>↗</span>
+                            </a>
+
+                            <a href="#">
+                                Material de divulgação
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTATO
+        ====================================================== -->
+
+        <section class="contact" id="contact">
+
+            <p class="section-label">
+                CONTATO
+            </p>
+
+            <h2>
+                Vamos criar
+                <span>alguma coisa?</span>
+            </h2>
+
+            <p class="contact-description">
+                Shows, eventos, colaborações, imprensa,
+                produção e propostas profissionais.
+            </p>
+
+            <a
+                href="mailto:contato@seudominio.com"
+                class="contact-email"
+            >
+                contato@seudominio.com
+            </a>
+
+
+            <div class="social-links">
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    Instagram ↗
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    Spotify ↗
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    YouTube ↗
+                </a>
+
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                    TikTok ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div>
+
+            <strong>
+                CLOUD HELLBOY
+            </strong>
+
+            <p>
+                Official Website
+            </p>
+
+        </div>
+
+        <p>
+            © <span id="currentYear"></span> Cloud Hellboy.
+            Todos os direitos reservados.
+        </p>
+
+        <a href="#home">
+            Voltar ao topo ↑
+        </a>
+
+    </footer>
+
+
+    <!-- JavaScript principal -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
